@@ -1,0 +1,57 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[top=1in, bottom=1in, left=0.75in, right=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{tikz, pgfplots}
+\usepackage{graphicx}
+\usepackage{float}
+%$y=\dfrac{x}{3x^2 + x + 1}$
+\def\eq1{y=\dfrac{x}{3x^2 + x + 1}}
+
+%new command to add vertical separation between list items%
+\newcommand{\set}[1]{\setlength\itemsep{#1em}}
+
+\title{Working with packages}
+\author{Vaibhav Singh}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+This will produce \textit{italicized} text
+
+This will produce \textbf{bold face} text
+
+This will produce \textsc{small caps} text
+
+This will produce \texttt{typewriter font} text
+
+
+\vspace{1cm}
+Please excuse my dear aunt Sally
+
+Please excuse my \begin{large}dear aunt Sally\end{large}
+
+Please excuse my \begin{Large}dear aunt Sally\end{Large}
+
+%\includegraphics[scale=1]{pennstate}
+%\includegraphics[width=3.5in, height=4in]{pennstate}
+%\begin{center}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4 \textwidth]{pennstate}\\
+\caption{This is a caption}
+\end{figure}
+
+%\end{center}
+
+\begin{enumerate}
+\set{1.2}
+\item Set of all real numbers $\mathbb{R}$
+\item Set of all integers $\mathbb{Z}$
+\item Set of all rational numbers $\mathbb{Q}$
+\item Function $\eq1$
+
+
+\end{enumerate}
+\end{document}
